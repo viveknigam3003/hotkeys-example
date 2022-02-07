@@ -8,6 +8,12 @@ interface CounterProps {
   tabIndex?: number;
 }
 
+/**
+ * Counter Component to display a simple integer counter.
+ * Also supports keyboard hotkeys.
+ * @interface CounterProps
+ * @returns JSX Counter Component 
+ */
 const Counter: React.FC<CounterProps> = ({ title, tabIndex = -1 }) => {
   const [counter, setCounter] = useState(0);
 
@@ -37,8 +43,9 @@ const Counter: React.FC<CounterProps> = ({ title, tabIndex = -1 }) => {
     alert(`${title} Reset Success`);
   };
 
-  /*** SHORTCUT HANDLER DECLARATIONS ***/
-  //To Register Keyboard Hotkey Handlers
+  /** SHORTCUT HANDLER DECLARATIONS
+   *  @description To Register Keyboard Hotkey Handlers
+   */
   const hotkeys: HotKeyHandlers = {
     counterUp: (e) => updateCounter("UP", e),
     counterDown: (e) => updateCounter("DOWN", e),
