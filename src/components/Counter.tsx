@@ -11,9 +11,6 @@ interface CounterProps {
 const Counter: React.FC<CounterProps> = ({ title, tabIndex = -1 }) => {
   const [counter, setCounter] = useState(0);
 
-  //To Register Keyboard Hotkey Handlers
-  const hotkeys: KeyHandlers = {};
-
   /**
    * Function to update the counter
    * @param type Defines the action UP for increasing, DOWN for decreasing
@@ -41,9 +38,12 @@ const Counter: React.FC<CounterProps> = ({ title, tabIndex = -1 }) => {
   };
 
   /*** SHORTCUT HANDLER DECLARATIONS ***/
-  hotkeys.counterUp = (e) => updateCounter("UP", e);
-  hotkeys.counterDown = (e) => updateCounter("DOWN", e);
-  hotkeys.counterReset = (e) => counterReset(e);
+  //To Register Keyboard Hotkey Handlers
+  const hotkeys: KeyHandlers = {
+    counterUp: (e) => updateCounter("UP", e),
+    counterDown: (e) => updateCounter("DOWN", e),
+    counterReset: (e) => counterReset(e),
+  };
 
   return (
     <HotKeys className="CounterWrapper" handlers={hotkeys} tabIndex={tabIndex}>
@@ -51,8 +51,12 @@ const Counter: React.FC<CounterProps> = ({ title, tabIndex = -1 }) => {
         <h1>{counter}</h1>
         <p>{title}</p>
         <div className="UpdateButtons">
-          <button tabIndex={-1} onClick={() => updateCounter("UP")}>+</button>
-          <button tabIndex={-1} onClick={() => updateCounter("DOWN")}>-</button>
+          <button tabIndex={-1} onClick={() => updateCounter("UP")}>
+            +
+          </button>
+          <button tabIndex={-1} onClick={() => updateCounter("DOWN")}>
+            -
+          </button>
         </div>
       </div>
     </HotKeys>

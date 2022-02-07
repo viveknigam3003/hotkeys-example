@@ -1,8 +1,5 @@
 import { KeySequence } from "react-hotkeys";
-
-// To register a new action add the id for that action here.
-const Actions = <const>["counterUp", "counterDown", "counterReset"];
-
+import { Actions } from "./keyMap";
 interface HotKey {
   id: typeof Actions[number];
   sequence: KeySequence;
