@@ -24,7 +24,12 @@ function App() {
       <div className="root">
         <header>
           <h1>Counter App </h1>
-          <p>with Keyboard Controls</p>
+          <p>
+            with Keyboard Controls using{" "}
+            <a href="https://github.com/greena13/react-hotkeys">
+              react-hotkeys
+            </a>
+          </p>
         </header>
 
         <div className="App">
