@@ -1,0 +1,36 @@
+.CounterWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.Counter {
+  cursor: pointer;
+  background-color: #fffafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+  padding: 4rem;
+  border-radius: 10px;
+  box-shadow: 0.6px 2.6px 2.2px rgba(0, 0, 0, 0.02),
+    1.3px 6.2px 5.3px rgba(0, 0, 0, 0.028),
+    2.5px 11.6px 10px rgba(0, 0, 0, 0.035),
+    4.5px 20.8px 17.9px rgba(0, 0, 0, 0.042),
+    8.4px 38.9px 33.4px rgba(0, 0, 0, 0.05), 20px 93px 80px rgba(0, 0, 0, 0.07);
+}
+
+.CounterWrapper:focus {
+    outline: none;
+}
+
+.CounterWrapper:focus > .Counter  {
+    outline: 2px solid cadetblue;
+}
+
+.UpdateButtons > button {
+   padding: 0.2rem 1rem;
+   margin: 0.2rem;
+}
