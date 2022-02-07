@@ -39,7 +39,7 @@ function App() {
             <li>You can use Tab ↹ key to move focus between counters</li>
             <li>Use the ⬆ and ⬇ arrow keys to update counter</li>
             <li>Use ⌘ + R or Ctrl + R to reset the counter</li>
-            <li>Use ⌘ + / for Help (in the console)</li>
+            <li>Use ⌘ + / for Keymap Object (in the console)</li>
           </ul>
         </footer>
       </div>
