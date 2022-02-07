@@ -1,6 +1,8 @@
-import { KeyMap } from "./types";
+import { HotKeyMap } from "./types";
 
-// To register a new action add the id for that action here.
+/**
+ * To register a new action add the id for that action here.
+ */
 export const Actions = <const>[
   "counterUp",
   "counterDown",
@@ -8,7 +10,7 @@ export const Actions = <const>[
   "help",
 ];
 
-export const keyMap: KeyMap = {
+export const keyMap: HotKeyMap = {
   counterUp: {
     sequence: "up",
     name: "Counter Increased",

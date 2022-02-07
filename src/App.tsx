@@ -3,7 +3,7 @@ import { getApplicationKeyMap, HotKeys } from "react-hotkeys";
 import "./App.css";
 import Counter from "./components/Counter";
 import { keyMap } from "./keyMap";
-import { KeyHandlers } from "./types";
+import { HotKeyHandlers } from "./types";
 
 function App() {
   /**
@@ -15,7 +15,7 @@ function App() {
   };
 
   // Registering hotkey handlers
-  const hotkeys: KeyHandlers = {
+  const hotkeys: HotKeyHandlers = {
     help: () => showHelp(),
   };
 

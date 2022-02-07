@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HotKeys } from "react-hotkeys";
-import { KeyHandlers } from "../types";
+import { HotKeyHandlers } from "../types";
 import "./Counter.css";
 
 interface CounterProps {
@@ -39,7 +39,7 @@ const Counter: React.FC<CounterProps> = ({ title, tabIndex = -1 }) => {
 
   /*** SHORTCUT HANDLER DECLARATIONS ***/
   //To Register Keyboard Hotkey Handlers
-  const hotkeys: KeyHandlers = {
+  const hotkeys: HotKeyHandlers = {
     counterUp: (e) => updateCounter("UP", e),
     counterDown: (e) => updateCounter("DOWN", e),
     counterReset: (e) => counterReset(e),
