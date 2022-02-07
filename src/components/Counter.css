@@ -15,6 +15,16 @@
   color: #212121;
   padding: 4rem;
   border-radius: 10px;
+  border: 2px solid #ddd;
+  transition: 0.2s all;
+}
+
+.CounterWrapper:focus {
+  outline: none;
+}
+
+.CounterWrapper:focus > .Counter {
+  border: 2px solid cadetblue;
   box-shadow: 0.6px 2.6px 2.2px rgba(0, 0, 0, 0.02),
     1.3px 6.2px 5.3px rgba(0, 0, 0, 0.028),
     2.5px 11.6px 10px rgba(0, 0, 0, 0.035),
@@ -22,15 +32,7 @@
     8.4px 38.9px 33.4px rgba(0, 0, 0, 0.05), 20px 93px 80px rgba(0, 0, 0, 0.07);
 }
 
-.CounterWrapper:focus {
-    outline: none;
-}
-
-.CounterWrapper:focus > .Counter  {
-    outline: 2px solid cadetblue;
-}
-
 .UpdateButtons > button {
-   padding: 0.2rem 1rem;
-   margin: 0.2rem;
+  padding: 0.2rem 1rem;
+  margin: 0.2rem;
 }

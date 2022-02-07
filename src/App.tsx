@@ -21,6 +21,7 @@ function App() {
         <h2>Instructions</h2>
         <ul>
           <li>Click on a counter to bring it in focus</li>
+          <li>You can use Tab ↹ key to move focus between counters</li>
           <li>Use the ⬆ and ⬇ arrow keys to update counter</li>
           <li>Use ⌘ + R or Ctrl + R to reset the counter</li>
         </ul>
