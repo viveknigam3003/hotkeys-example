@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { HotKeys } from "react-hotkeys";
+import "./App.css";
+import FirstComponent from "./components/FirstComponent";
+import OtherComponent from "./components/OtherComponent";
+import { keyMap } from "./keyMap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HotKeys keyMap={keyMap}>
+      <div className="App">
+        <FirstComponent />
+        <OtherComponent />
+      </div>
+    </HotKeys>
   );
 }
 
