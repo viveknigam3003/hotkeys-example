@@ -26,7 +26,7 @@ function App() {
           <h1>Counter App </h1>
           <p>
             with Keyboard Controls using{" "}
-            <a href="https://github.com/greena13/react-hotkeys">
+            <a href="https://github.com/greena13/react-hotkeys" tabIndex={-1}>
               react-hotkeys
             </a>
           </p>
@@ -46,6 +46,7 @@ function App() {
             <li>Use ⌘ + R or Ctrl + R to reset the counter</li>
             <li>Use ⌘ + / for Keymap Object (in the console)</li>
           </ul>
+          <a tabIndex={-1} href="https://github.com/viveknigam3003/hotkeys-example">Source Code</a>
         </footer>
       </div>
     </HotKeys>

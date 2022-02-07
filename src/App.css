@@ -24,6 +24,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 footer > ul > li {
@@ -48,11 +49,11 @@ a {
 }
 
 a:link {
-  color: cadetblue;
+  color: #508383;
 }
 
 a:visited {
-  color: cadetblue;
+  color: #508383;
 }
 
 a:hover {
